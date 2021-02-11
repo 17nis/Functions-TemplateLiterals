@@ -1,21 +1,21 @@
 // EXERCICI 1
 console.log("---Exercici 1---");
 
-let i = 1;
-let matriuFuncions = [imprimir(i)];
+let i, j;
+let matriuFuncions = [imprimir()];
 
 function imprimir(i){
-    if(i<=10){
-        console.log(i);
-        i++;
-        return imprimir(i)}
+    for(i = 0; i < 10; i++){
+        for(j = 0; j < 10; j++){
+            console.log(j);
+        }
+    }
 }
 
 
 // EXERCICI 2
 console.log("---Exercici 2---");
-let nom = "genís";
 
-const x =(() =>{
+const x =((nom) =>{
     console.log(nom);
-})();
+})('genís');
